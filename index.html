@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<!-- =========================================================
+  PORTFOLIO — ALDANA AVILA
+========================================================= -->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aldana Avila — Data Analyst</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo">Aldana<span></span></div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#contact" class="nav-cta">Contacto</a></li>
+  </ul>
+
+  <!--
+    Ícono hamburguesa — se muestra solo en mobile (< 768px)
+    onclick="toggleMenu()" llama a la función en script.js
+    Los 3 <span> son las 3 rayitas del ícono
+  -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+
+    <div class="hero-badge">Analista de Datos · Deltacom SA</div>
+
+    <h1 class="hero-name">Aldana<br><em>Avila</em></h1>
+
+    <p class="hero-role">
+      Data Analyst <span>·</span> Business Intelligence <span>·</span> Power BI <span>·</span> Looker Studio<span>.</span>SQL
+    </p>
+
+    <p class="hero-phrase">
+      Transformo datos en decisiones. Analista en actividad con experiencia real en
+      <strong>KPIs operativos, dashboards y automatización</strong> de reportes.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-primary">Ver proyectos →</a>
+      <a href="mailto:aldana.avilaa416@gmail.com" class="btn btn-secondary">Contacto</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-grid">
+
+    <div class="about-visual">
+      <div class="about-card reveal">
+        <!-- Avatar con inicial — podés reemplazar por una foto con <img> -->
+        <div class="about-avatar">A</div>
+        <div class="about-card-name">Aldana Avila</div>
+        <div class="about-card-role">Data Analyst · BI Developer</div>
+        <div style="font-size:.85rem;color:var(--text-muted);font-weight:300;line-height:1.6;">
+          Tec. en Desarrollo de Software<br>
+          <span style="color:var(--indigo);font-weight:600;">UADE</span> · 2do año<br>
+          <span style="color:var(--text-muted);">Belén de Escobar, Bs. As.</span>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Años de exp.</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">6+</div>
+            <div class="stat-label">Proyectos</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Herramientas BI</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">EN</div>
+            <div class="stat-label">Inglés avanzado</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-floating">💼 DELTACOM SA · Actual</div>
+    </div>
+
+    <div class="about-text reveal">
+      <div class="section-label">Sobre mí</div>
+      <h2 class="section-title">Datos que<br>cuentan historias</h2>
+
+      <div class="divider"></div>
+
+      <p>
+        Soy <strong>Analista de Datos, Logística y RRHH</strong> en DELTACOM SA,
+        donde desarrollo dashboards, automatizo reportes y genero KPIs operativos
+        para la toma de decisiones gerencial. Estudio
+        <strong>Desarrollo de Software en UADE</strong>.
+      </p>
+      <p>
+        Mi experiencia abarca análisis de costos, gestión de datos en TMS,
+        visualizaciones en Excel y Power BI, y automatización de procesos.
+        Tengo background administrativo y contable que me da una visión de
+        negocio integral.
+      </p>
+      <p>
+        Me interesa especialmente el análisis de negocio, la mejora de procesos
+        y convertir datos crudos en insights que impacten resultados reales.
+      </p>
+
+      <div class="about-tags">
+        <span class="tag">KPIs operativos</span>
+        <span class="tag">Dashboards</span>
+        <span class="tag">ETL</span>
+        <span class="tag">Modelado relacional</span>
+        <span class="tag">Automatización</span>
+        <span class="tag">Análisis de costos</span>
+        <span class="tag">Inglés avanzado</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EXPERIENCIA LABORAL 
+<section id="experience">
+  <div class="section-label reveal">Trayectoria</div>
+  <h2 class="section-title reveal">Experiencia laboral</h2>
+  <p class="section-sub reveal">Roles en empresas reales donde apliqué análisis de datos, BI y optimización de procesos.</p>
+
+  
+ <div class="exp-list">
+
+    <div class="exp-card current reveal">
+      <div class="exp-header">
+        <div class="exp-role">Analista de Datos, Logística y RRHH</div>
+        <div class="exp-company">DELTACOM SA</div>
+        <div class="exp-meta">Don Torcuato · Septiembre 2024 – Actualidad</div>
+      </div>
+      <ul class="exp-tasks">
+        <li>Análisis y control de costos operativos mediante indicadores y reportes para gerencia.</li>
+        <li>Desarrollo y automatización de dashboards e informes en Excel para seguimiento de KPIs operativos y de RRHH.</li>
+        <li>Gestión y análisis de datos en TMS, identificando desvíos y oportunidades de mejora.</li>
+        <li>Elaboración de tableros de control y visualizaciones para monitoreo de desempeño operativo.</li>
+        <li>Análisis de consumo, horas extras y servicios, generando propuestas basadas en datos.</li>
+        <li>Automatización de procesos mediante tablas dinámicas, fórmulas y reportes automatizados en Excel.</li>
+        <li>Presentación de resultados y métricas para la toma de decisiones.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div class="exp-role">Administrativa Auxiliar</div>
+        <div class="exp-company">Eloteq (Grupo Enteq)</div>
+        <div class="exp-meta">Gral. Pacheco · Abril 2024 – Septiembre 2024</div>
+      </div>
+      <ul class="exp-tasks">
+        <li>Gestión de nóminas, beneficios y control de horas.</li>
+        <li>Facturación, seguimiento contable y conciliación de cuentas y pagos a proveedores.</li>
+        <li>Elaboración de informes de producción y control de documentación operativa.</li>
+        <li>Participación en la mejora de procesos administrativos y comunicación interárea.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div class="exp-role">Recepcionista Administrativa</div>
+        <div class="exp-company">Tradelog</div>
+        <div class="exp-meta">Garín · Mayo 2022 – Enero 2024</div>
+      </div>
+      <ul class="exp-tasks">
+        <li>Soporte a gerencia y coordinación de agendas, reuniones y logística.</li>
+        <li>Elaboración de reportes y presentaciones con Office y Canva.</li>
+        <li>Asistencia a RRHH: gestión de legajos, vacaciones y altas de empleados.</li>
+        <li>Control de proveedores, órdenes de pago y conciliaciones.</li>
+      </ul>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div class="exp-role">Analista de Cuentas Corrientes</div>
+        <div class="exp-company">Alfarma SRL</div>
+        <div class="exp-meta">Beccar · Diciembre 2021 – Mayo 2022</div>
+      </div>
+      <ul class="exp-tasks">
+        <li>Análisis y conciliación de cuentas de clientes y control de cobranzas.</li>
+        <li>Elaboración de reportes financieros y proyección de cobros.</li>
+        <li>Identificación de inconsistencias contables y propuesta de mejoras.</li>
+        <li>Manejo de IF Soluciones para registro y seguimiento de información contable.</li>
+      </ul>
+    </div>
+
+  </div>
+</section> --!
+
+
+<!-- ─────────────────────────────────────────────
+  SKILLS — Habilidades técnicas
+  Grilla de tarjetas por categoría (auto-fit en CSS)
+  Para agregar una skill: copiá un <li> y cambiá el texto
+  Para agregar una categoría: copiá todo un .skill-category
+───────────────────────────────────────────────── -->
+
+<section id="skills">
+  <div class="section-label reveal">Habilidades</div>
+  <h2 class="section-title reveal">Stack técnico</h2>
+  <p class="section-sub reveal">Herramientas y lenguajes con los que construyo soluciones de datos.</p>
+
+  <div class="skills-grid">
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">📊</div>
+      <div class="skill-cat-title">Data & BI</div>
+      <ul class="skill-list">
+        <li>Power BI</li>
+        <li>Looker Studio</li>
+        <li>Power Query</li>
+        <li>Modelado de datos</li>
+        <li>KPIs y dashboards</li>
+        <li>Visualización de datos</li>
+        <li>ETL básico</li>
+      </ul>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🗃️</div>
+      <div class="skill-cat-title">Bases de datos</div>
+      <ul class="skill-list">
+        <li>SQL (CoderHouse cert.)</li>
+        <li>Diseño relacional</li>
+        <li>Normalización</li>
+        <li>Consultas y análisis</li>
+        <li>Modelado de BD</li>
+      </ul>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">💻</div>
+      <div class="skill-cat-title">Programación</div>
+      <ul class="skill-list">
+        <li>Python (en aprendizaje)</li>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+        <li>POO en Java</li>
+        <li>Google Apps Script</li>
+      </ul>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🛠️</div>
+      <div class="skill-cat-title">Herramientas</div>
+      <ul class="skill-list">
+        <li>Excel avanzado (tablas din., fórmulas)</li>
+        <li>Google Sheets</li>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        <li>TMS</li>
+      </ul>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🌐</div>
+      <div class="skill-cat-title">Idiomas</div>
+      <ul class="skill-list">
+        <li>Español — Nativo</li>
+        <li>Inglés — Avanzado</li>
+        <li>Portugués — Básico</li>
+        <li>Italiano — Básico</li>
+      </ul>
+    </div>
+
+    <div class="skill-category reveal">
+      <div class="skill-cat-icon">🎓</div>
+      <div class="skill-cat-title">Formación</div>
+      <ul class="skill-list">
+        <li>Tec. Desarrollo de Software — UADE</li>
+        <li>SQL — CoderHouse</li>
+        <li>Marketing Digital — CoderHouse</li>
+        <li>Inglés — Kaplan - London</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────
+  IMPORTANTE: si agregás un proyecto nuevo en el HTML,
+  también tenés que agregarlo en el objeto projects del JS
+───────────────────────────────────────────────── -->
+<section id="projects">
+  <div class="section-label reveal">Proyectos</div>
+  <h2 class="section-title reveal">Trabajo aplicado</h2>
+  <p class="section-sub reveal">Dashboards, análisis y modelos construidos sobre casos de negocio reales.</p>
+
+  <!--
+    Botones de filtro — el onclick pasa la categoría al JS
+    "all" muestra todo, "bi", "sql", "auto" filtran por data-cat
+  -->
+  <div class="projects-filter reveal">
+    <button class="filter-btn active" onclick="filterProjects('all', this)">Todos</button>
+    <button class="filter-btn" onclick="filterProjects('bi', this)">BI & Dashboards</button>
+    <button class="filter-btn" onclick="filterProjects('sql', this)">SQL & BD</button>
+    <button class="filter-btn" onclick="filterProjects('auto', this)">Automatización</button>
+  </div>
+
+  <div class="projects-grid" id="projectsGrid">
+
+    <!--
+      TARJETA DE PROYECTO — estructura:
+      .project-thumb  → imagen/emoji de portada (cambiá el background gradient y el emoji)
+      .project-body   → contenido de la tarjeta
+      .project-tags   → etiquetas de tecnologías
+      .project-kpis   → chips de KPIs destacados
+      .project-footer → estado + link
+
+      data-cat="bi"  → categoría para el filtro (puede tener más de una: "bi sql")
+      onclick="openModal('p1')" → qué modal abre (p1, p2, p3...)
+    -->
+    <div class="project-card reveal" data-cat="bi" onclick="openModal('p1')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#3D52A0,#7091E6);">
+        <div class="project-thumb-grid"></div>
+        <img class="project-thumb-img" src="images/dashboard-logistica.png" alt="Dashboard Logística DELTACOM">
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Looker Studio</span>
+          <span class="project-tag">KPIs</span>
+          <span class="project-tag">Logística</span>
+        </div>
+        <div class="project-title">Dashboard Logística — DELTACOM</div>
+        <div class="project-desc">Tableros de control para KPIs operativos reales: combustible, estado de unidades, VTV, eficiencia de servicios, KPI's. En uso actual en gerencia.</div>
+        <div class="project-kpis">
+          <span class="kpi-chip">Combustible</span>
+          <span class="kpi-chip">Estado unidades</span>
+          <span class="kpi-chip">VTV</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-status status-done">
+            <span class="status-dot"></span> En producción
+          </div>
+          <span class="project-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="bi" onclick="openModal('p7')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#7091E6,#8697C4);">
+        <div class="project-thumb-grid"></div>
+        <img class="project-thumb-img" src="images/dashboard-rrhh.png" alt="Dashboard RRHH DELTACOM">
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Looker Studio</span>
+          <span class="project-tag">Google Sheets</span>
+          <span class="project-tag">RRHH</span>
+        </div>
+        <div class="project-title">Dashboard RRHH — DELTACOM</div>
+        <div class="project-desc">Tableros de RRHH para seguimiento de headcount, movimientos de personal, horas extra y ausentismo. Consolidación de múltiples planillas vía IMPORTRANGE.</div>
+        <div class="project-kpis">
+          <span class="kpi-chip">Headcount</span>
+          <span class="kpi-chip">Ausentismo</span>
+          <span class="kpi-chip">Horas extra</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-status status-done">
+            <span class="status-dot"></span> En producción
+          </div>
+          <span class="project-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+<div class="project-card reveal" data-cat="auto" onclick="openModal('p2')">
+  <div class="project-thumb" style="background:linear-gradient(135deg,#101726,#3D52A0);">
+    <div class="project-thumb-grid"></div>
+    <span class="project-emoji">✉️</span>
+  </div>
+  <div class="project-body">
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Apps Script</span>
+          <span class="project-tag">Automatización</span>
+          <span class="project-tag">Gmail</span>
+      
+        </div>
+        <div class="project-title">Automatización de Avisos por Mail</div>
+        <div class="project-desc">Sistema de alertas automáticas por email ante desvíos en KPIs críticos (vencimientos VTV, consumo de combustible). Elimina el seguimiento manual.</div>
+        <div class="project-kpis">
+          <span class="kpi-chip">Triggers</span>
+          <span class="kpi-chip">0 intervención manual</span>
+          <span class="kpi-chip">Multi-destinatario</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-status status-done">
+            <span class="status-dot"></span> Completado
+          </div>
+          <span class="project-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="bi" onclick="openModal('p3')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#3D52A0,#8697C4);">
+        <div class="project-thumb-grid"></div>
+        <span class="project-emoji">🫔</span>
+        <img class="project-thumb-img" src="images/dashboard-empanadas.png" alt="Dashboard Emprendimiento Empanadas">
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Power BI</span>
+          <span class="project-tag">Power Query</span>
+          <span class="project-tag">Analytics</span>
+        </div>
+        <div class="project-title">Dashboard de Emprendimiento — Empanadas</div>
+        <div class="project-desc">Sistema de análisis de ventas y rentabilidad para emprendimiento gastronómico. Evolución temporal, margen por producto y KPIs de crecimiento.</div>
+        <div class="project-kpis">
+          <span class="kpi-chip">Ventas</span>
+          <span class="kpi-chip">Margen</span>
+          <span class="kpi-chip">Ticket promedio</span>
+          <span class="kpi-chip">Rentabilidad</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-status status-wip">
+            <span class="status-dot"></span> En desarrollo
+          </div>
+          <span class="project-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="sql" onclick="openModal('p4')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#101726,#7091E6);">
+        <div class="project-thumb-grid"></div>
+        <span class="project-emoji">🗄️</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">Modelado</span>
+          <span class="project-tag">CoderHouse</span>
+        </div>
+        <div class="project-title">Proyecto SQL — Base de Datos Relacional</div>
+        <div class="project-desc">Diseño y análisis de base de datos relacional. Consultas avanzadas, JOINs, subconsultas y normalización aplicados a un caso de negocio real.</div>
+        <div class="project-kpis">
+          <span class="kpi-chip">Modelo relacional</span>
+          <span class="kpi-chip">JOINs</span>
+          <span class="kpi-chip">Normalización</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-status status-done">
+            <span class="status-dot"></span> Completado
+          </div>
+          <span class="project-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="bi" onclick="openModal('p5')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#8697C4,#ADBBDA);">
+        <div class="project-thumb-grid"></div>
+        <img class="project-thumb-img" src="images/dashboard-finanzas.png" alt="Finanzas Personales Dashboard">
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">Power BI</span>
+          <span class="project-tag">Finanzas</span>
+          <span class="project-tag">Analytics</span>
+        </div>
+        <div class="project-title">Finanzas Personales — Dashboard</div>
+        <div class="project-desc">Sistema de seguimiento financiero: ingresos, gastos, deudas, flujo de caja y proyecciones de ahorro orientado a decisiones de presupuesto.</div>
+        <div class="project-kpis">
+          <span class="kpi-chip">Ingresos</span>
+          <span class="kpi-chip">Gastos</span>
+          <span class="kpi-chip">Flujo</span>
+          <span class="kpi-chip">Proyección</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-status status-wip">
+            <span class="status-dot"></span> En curso
+          </div>
+          <span class="project-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="sql bi" onclick="openModal('p6')">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#7091E6,#3D52A0);">
+        <div class="project-thumb-grid"></div>
+        <span class="project-emoji">💊</span>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">Looker Studio</span>
+          <span class="project-tag">Logística</span>
+        </div>
+        <div class="project-title">Logística Farmacéutica — Modelo Relacional</div>
+        <div class="project-desc">Modelo relacional completo para empresa tipo Andreani. Trazabilidad de envíos, estado de flota y KPIs de distribución farmacéutica.</div>
+        <div class="project-kpis">
+          <span class="kpi-chip">Trazabilidad</span>
+          <span class="kpi-chip">Estado flota</span>
+          <span class="kpi-chip">KPIs</span>
+        </div>
+        <div class="project-footer">
+          <div class="project-status status-wip">
+            <span class="status-dot"></span> En desarrollo
+          </div>
+          <span class="project-link">Ver más →</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="timeline">
+  <div class="section-label reveal">Evolución</div>
+  <h2 class="section-title reveal">Mi camino en datos</h2>
+  <p class="section-sub reveal">De los fundamentos técnicos a proyectos aplicados de negocio real.</p>
+
+  <div class="rt-wrap">
+
+    <div class="rt-item reveal" style="color:#101726;">
+      <div class="rt-date">Dic 2021 – May 2022</div>
+      <div class="rt-connector"></div>
+      <div class="rt-ribbon" style="background:#101726;">
+        <div class="rt-chip" style="border-color:#101726;">🎓</div>
+      </div>
+      <div class="rt-arrow" style="border-bottom-color:#101726;"></div>
+      <div class="rt-box" style="background:#101726;">
+        <div class="rt-title">Analista de Cuentas Corrientes — Alfarma SRL</div>
+        <div class="rt-desc">Primeros pasos en análisis financiero, conciliación de cuentas y reportes.</div>
+      </div>
+    </div>
+
+    <div class="rt-item reveal" style="color:#3D52A0;">
+      <div class="rt-date">May 2022 – Ene 2024</div>
+      <div class="rt-connector"></div>
+      <div class="rt-ribbon" style="background:#3D52A0;">
+        <div class="rt-chip" style="border-color:#3D52A0;">🏢</div>
+      </div>
+      <div class="rt-arrow" style="border-bottom-color:#3D52A0;"></div>
+      <div class="rt-box" style="background:#3D52A0;">
+        <div class="rt-title">Administrativa — Tradelog · Inicio UADE</div>
+        <div class="rt-desc">Reportes y gestión de información. Comienzo de la Tecnicatura en UADE.</div>
+      </div>
+    </div>
+
+    <div class="rt-item reveal" style="color:#5C74C4;">
+      <div class="rt-date">2023</div>
+      <div class="rt-connector"></div>
+      <div class="rt-ribbon" style="background:#5C74C4;">
+        <div class="rt-chip" style="border-color:#5C74C4;">🗄️</div>
+      </div>
+      <div class="rt-arrow" style="border-bottom-color:#5C74C4;"></div>
+      <div class="rt-box" style="background:#5C74C4;">
+        <div class="rt-title">Certificación SQL — CoderHouse</div>
+        <div class="rt-desc">Consultas avanzadas, normalización y diseño de bases de datos relacionales.</div>
+      </div>
+    </div>
+
+    <div class="rt-item reveal" style="color:#7091E6;">
+      <div class="rt-date">Abr – Sep 2024</div>
+      <div class="rt-connector"></div>
+      <div class="rt-ribbon" style="background:#7091E6;">
+        <div class="rt-chip" style="border-color:#7091E6;">⚙️</div>
+      </div>
+      <div class="rt-arrow" style="border-bottom-color:#7091E6;"></div>
+      <div class="rt-box" style="background:#7091E6;">
+        <div class="rt-title">Administrativa Auxiliar — Eloteq</div>
+        <div class="rt-desc">Nóminas, informes de producción y mejora de procesos administrativos.</div>
+      </div>
+    </div>
+
+    <div class="rt-item reveal" style="color:#8697C4;">
+      <div class="rt-date">Sep 2024 – Actualidad</div>
+      <div class="rt-connector"></div>
+      <div class="rt-ribbon" style="background:#8697C4;">
+        <div class="rt-chip" style="border-color:#8697C4;">📊</div>
+      </div>
+      <div class="rt-arrow" style="border-bottom-color:#8697C4;"></div>
+      <div class="rt-box" style="background:#8697C4;">
+        <div class="rt-title">Analista de Datos, Logística y RRHH — DELTACOM SA</div>
+        <div class="rt-desc">Dashboards reales, KPIs operativos, automatización y análisis de costos.</div>
+      </div>
+    </div>
+
+    <div class="rt-item reveal" style="color:#ADBBDA;">
+      <div class="rt-date">2025 – Presente</div>
+      <div class="rt-connector"></div>
+      <div class="rt-ribbon" style="background:#ADBBDA;">
+        <div class="rt-chip" style="border-color:#ADBBDA;">🚀</div>
+      </div>
+      <div class="rt-arrow" style="border-bottom-color:#ADBBDA;"></div>
+      <div class="rt-box" style="background:#ADBBDA;">
+        <div class="rt-title">Power BI, Python y proyectos de portfolio</div>
+        <div class="rt-desc">Profundización en Power BI y Power Query. Proyectos propios de emprendimiento, finanzas y logística.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────
+  CONTACT — Sección de contacto
+  Fondo oscuro (--navy). Grilla de 2 columnas:
+  izquierda: links de contacto
+  derecha: formulario (el envío lo maneja JS con sendForm())
+───────────────────────────────────────────────── -->
+<section id="contact">
+  <div class="contact-single-col">
+
+    <div class="section-label reveal">Contacto</div>
+    <h2 class="section-title reveal">Hablemos</h2>
+    <p class="reveal section-sub-contact" style="color:rgba(255,255,255,.55);font-size:1rem;font-weight:300;">
+      Estoy disponible para oportunidades en datos, BI o analítica. No dudes en escribirme.
+    </p>
+
+    <div class="contact-row reveal">
+
+      <!-- Cada .contact-link es un botón/link clickeable -->
+      <a href="mailto:aldana.avilaa416@gmail.com" class="contact-link">
+        <div class="contact-link-icon">✉️</div>
+        <div class="contact-link-text">
+          <strong>Email</strong>
+          <span>aldana.avilaa416@gmail.com</span>
+        </div>
+      </a>
+
+      <!-- Reemplazá con tu URL real de LinkedIn -->
+      <a href="https://www.linkedin.com/in/aldana-avila-43b724203/" target="_blank" class="contact-link">
+        <div class="contact-link-icon">💼</div>
+        <div class="contact-link-text">
+          <strong>LinkedIn</strong>
+          <span>linkedin.com/in/aldana-avila</span>
+        </div>
+      </a>
+
+      <!-- Deriva directo a WhatsApp -->
+      <a href="https://wa.me/5491130283995" target="_blank" class="contact-link">
+        <div class="contact-link-icon">📱</div>
+        <div class="contact-link-text">
+          <strong>WhatsApp</strong>
+          <span>11 3028 3995</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─────────────────────────────────────────────
+  FOOTER — Pie de página
+───────────────────────────────────────────────── -->
+<footer>
+  <p>© 2025 Aldana Avila · Data Analyst</p>
+  <div class="footer-links">
+    <a href="#home">Inicio</a>
+    <a href="#projects">Proyectos</a>
+    <a href="mailto:aldana.avilaa416@gmail.com">Email</a>
+  </div>
+</footer>
+
+
+<!-- ─────────────────────────────────────────────
+  MODAL — Ventana emergente de detalles de proyecto
+  El HTML de adentro se genera dinámicamente por JS (openModal)
+  No tocás este HTML — editá los datos en script.js
+───────────────────────────────────────────────── -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal">
+    <!-- El JS escribe acá el header del proyecto -->
+    <div class="modal-header" id="modalHeader"></div>
+    <!-- El JS escribe acá el cuerpo del proyecto -->
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+
+<!-- Conecta este HTML con el archivo de JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

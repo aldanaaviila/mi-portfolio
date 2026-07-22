@@ -2,7 +2,7 @@
 
 Portfolio personal de Data Analyst. Sitio web con mi presentación profesional, stack técnico, proyectos aplicados y línea de tiempo de mi trayectoria.
 
-🔗 **Ver sitio en vivo:** https://aldanaaviila.github.io/TU-REPO/ *(actualizá este link con la URL real de tu GitHub Pages)*
+🔗 **Ver sitio en vivo:** https://github.com/aldanaaviila/mi-portfolio
 
 ## Sobre el proyecto
 
@@ -47,12 +47,6 @@ cd TU-REPO
 ```
 
 Luego abrí `index.html` con doble clic, o con la extensión **Live Server** de VS Code para recarga automática al editar.
-
-## Cómo agregar un proyecto nuevo
-
-1. Copiá una tarjeta `.project-card` en `index.html` (sección `#projects`) y cambiá el `onclick="openModal('pX')"` por un ID nuevo.
-2. Agregá el objeto correspondiente `pX: { ... }` en `script.js`, dentro de `const projects = { ... }`.
-3. Si querés mostrar una imagen, agregá `image: 'nombre-archivo.png'` al objeto y subí el archivo a la raíz del repo (o a `images/` si organizás así, actualizando la ruta).
 
 ## Contacto
 
